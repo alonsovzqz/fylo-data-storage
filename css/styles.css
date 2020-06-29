@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+  --light-red: hsl(6, 100%, 80%);
+  --pink: hsl(335, 100%, 65%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875em;
+  color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1em;
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  min-width: 95%;
+  max-width: 23.4375em;
+}
+
+.storage__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.storage__item {
+  padding: 2em;
+  background-color: var(--dark-blue);
+  border-radius: 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.storage-actions img {
+  min-width: 4em;
+  min-height: 4em;
+  max-width: 4em;
+  max-height: 4em;
+}
+
+.storage-actions > * {
+  background-color: var(--very-dark-blue);
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
