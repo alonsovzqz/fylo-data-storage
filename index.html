@@ -17,18 +17,27 @@
   </head>
   <body>
     <div class="container">
-      <div class="storage">
-        <div class="storage__container">
-          <div class="storage__item container-actions">
-            <img src="./images/logo.svg" alt="Fylo Logo image" />
-            <div class="storage-actions">
-              <img src="./images/icon-document.svg" alt="Document icon" />
-              <img src="./images/icon-folder.svg" alt="Folder icon" />
-              <img src="./images/icon-upload.svg" alt="Upload icon" />
-            </div>
+      <div class="storage__container">
+        <div class="storage__item container-actions">
+          <img src="./images/logo.svg" alt="Fylo Logo image" />
+          <div class="storage-actions">
+            <img src="./images/icon-document.svg" alt="Document icon" />
+            <img src="./images/icon-folder.svg" alt="Folder icon" />
+            <img src="./images/icon-upload.svg" alt="Upload icon" />
           </div>
-          <div class="storage__item container-used-space">
-            <p>You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB</p>
+        </div>
+        <div class="storage__item container-used-space">
+          <p>
+            You’ve used <span class="text-bold">815 GB</span> of your storage
+          </p>
+          <div class="storage__indicator"></div>
+          <p>
+            <span class="text-bold">0 GB</span>
+            <span class="text-bold">1000 GB</span>
+          </p>
+          <div class="space-left">
+            <span class="text-bold">185</span>
+            <span> GB LEFT</span>
           </div>
         </div>
       </div>
