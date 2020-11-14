@@ -24,7 +24,7 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  padding: 1em;
+  padding: 1em 1.5em;
   background-image: url("../images/bg-mobile.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -33,6 +33,7 @@ body {
 
 .container {
   align-items: center;
+  width: 100%;
 }
 
 .storage__container {
@@ -85,10 +86,22 @@ body {
 
 .container-used-space {
   position: relative;
+  justify-content: space-evenly;
+}
+
+.container-used-space > p:first-child {
+  font-size: 13px;
 }
 
 .storage__indicator-container {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+.storage__indicator-container p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
 }
 
 .storage__indicator {
@@ -97,6 +110,7 @@ body {
   height: 20px;
   background-color: var(--very-dark-blue);
   border-radius: 50px;
+  margin-bottom: 8px;
 }
 
 .storage__indicator::before {
@@ -115,7 +129,7 @@ body {
   width: 10px;
   height: 10px;
   top: 5px;
-  right: 50px;
+  right: 55px;
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
@@ -123,7 +137,7 @@ body {
 
 .space-left {
   position: absolute;
-  bottom: -35px;
+  bottom: -38px;
   left: 20%;
   display: flex;
   justify-content: baseline;
@@ -142,6 +156,8 @@ body {
 }
 
 /* Utilities */
+
+/* Text */
 .text-bold {
   font-weight: bold;
 }
@@ -149,6 +165,16 @@ body {
 .text-center {
   text-align: center;
 }
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Sizing */
+.w-100 {
+  width: 100%;
+}
+
 
 /* Footer */
 .attribution {
