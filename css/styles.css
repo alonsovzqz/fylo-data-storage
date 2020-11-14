@@ -91,6 +91,7 @@ body {
 
 .container-used-space > p:first-child {
   font-size: 14px;
+  text-align: center;
 }
 
 .storage__indicator-container {
@@ -183,4 +184,62 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../images/bg-desktop.png');
+    background-color: var(--very-dark-blue);
+    background-size: 100% auto;
+  }
+
+  .storage__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .storage__item:first-child {
+    margin-right: 2em;
+  }
+
+  .storage__item:last-child {
+    padding-top: 0;
+  }
+
+  .container-actions {
+    width: 350px;
+  }
+
+  .container-used-space {
+    width: 600px;
+  }
+
+  .storage__indicator::after {
+    right: 114px;
+  }
+
+  .space-left {
+    bottom: unset;
+    left: unset;
+    top: -50px;
+    right: 40px;
+  }
+
+  .space-left::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-right: 24px solid #fff;
+  }
+
+  .container-used-space > p:first-child {
+    text-align: left;
+  }
 }
