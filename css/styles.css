@@ -74,6 +74,12 @@ body {
   background-color: var(--very-dark-blue);
   padding: 1em 0.8em;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.storage-actions img:hover {
+  transform: scale(0.98);
+  background-color: hsla(229, 57%, 11%, 0.7);
 }
 
 .storage-actions img:first-child {
@@ -130,7 +136,7 @@ body {
   width: 10px;
   height: 10px;
   top: 5px;
-  right: 55px;
+  right: 22%;
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
@@ -214,10 +220,6 @@ body {
 
   .container-used-space {
     width: 600px;
-  }
-
-  .storage__indicator::after {
-    right: 114px;
   }
 
   .space-left {
